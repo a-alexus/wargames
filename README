@@ -1,0 +1,4 @@
+Note that the solutions depending on one gadgets and contain hard-coded
+addresses will not necessarily work on your machine. The address must be
+replaced with a one gadget address for the version of glibc that you are
+running.
