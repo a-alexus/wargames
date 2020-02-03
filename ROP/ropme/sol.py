@@ -2,56 +2,6 @@
 
 from pwn import *
 
-
-#gadgets
-
-
-# main_ 0x80484eb
-    # push ebp
-    # move ebp, esp
-    # retn
-
-# sub_80484ef
-    # xor edx, edx
-    # retn
-
-# sub_80484f2
-    # int 0x80
-    # retn
-
-# sub_80484f5
-    # sub ecx, 0x4
-    # retn
-
-# sub_80484f9
-    # mov eax, ecx
-    # retn
-
-# sub_80484fc
-    # add edx, 0x1
-    # retn
-
-# sub_8048500:
-    # mov eax, edx
-    # mov ebx, edx      0x8048504
-    # retn
-
-# sub_8048505:
-    # inc edx
-    # retn
-
-# sub_8048508:
-    # pop ebp
-    # retn
-
-# fini_ 
-    # pop ebx
-    # ret
-
-# 0x8048379
-    # pop ebx
-    # ret
-
 p = process('./ropme')
 pause()
 p.recvuntil("Gimme data:", drop=True)
