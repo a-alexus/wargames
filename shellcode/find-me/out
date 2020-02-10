@@ -1,0 +1,4 @@
+[x] Starting local process './find-me'
+[+] Starting local process './find-me': pid 7864
+68 41 41 41 41 b8 04 00 00 00 bb 01 00 00 00 89 e1 ba 04 00 00 00 cd 80
+[*] Stopped process './find-me' (pid 7864)
